@@ -14,5 +14,6 @@ Make a list of the requirements for each secret scanner
         - Easy deployment
         
     - Cons:
+       - Schedule a scan?
        - CI/CD configuration 
        - Enforcement policy? 
