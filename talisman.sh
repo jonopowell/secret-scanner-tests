@@ -10,3 +10,11 @@ chmod +x ~/install-talisman.sh
 
 # Install as a pre-push hook
 ~/install-talisman.sh
+
+# Uninstall 
+curl --silent  https://raw.githubusercontent.com/thoughtworks/talisman/master/global_install_scripts/uninstall.bash > /tmp/uninstall_talisman.bash
+/bin/bash /tmp/uninstall_talisman.bash
+/bin/bash /tmp/uninstall_talisman.bash pre-push
+
+unset TALISMAN_INTERACTIVE
+unset TALISMAN_HOME
