@@ -3,12 +3,15 @@ Make a list of the requirements for each secret scanner
  - git-secrets
    - Hooks the commit, but can scan the history
  - gitleaks
+   -
  - talisman
    - Works by hooking commit, select between pre-push and pre-commit
    - Scans history (time?)
    - 
 
  - truffleHog
+   - Standalone Python application
+   - 
 
  # Mechanisms for Scanning
   - Hook commit, pre-push or pre-commit (Talisman,git-secrets)
