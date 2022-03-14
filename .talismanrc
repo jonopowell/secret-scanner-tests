@@ -1,0 +1,4 @@
+fileignoreconfig:
+- filename: MyApp.py
+  checksum: fa3d85abaf4a8a8c3395ac0e1b3cf0b230b7e6d67b5fc86dd63ad9a7ccb3c265
+version: "1.0"

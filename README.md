@@ -1,16 +1,17 @@
 # Todo
 Make a list of the requirements for each secret scanner
  - gitleaks
-   - Hooks the commit, but can scan the history
-   - Has specific features for AWS, looks for AWS secrets and credentials.
-   - Adds aditional options to the Git command
+   - Go application, builds itself in a docker container
  - git-secrets
-   - Hooks commit 
+   - Bash Scripts
+   - Hooks commit
+   - Specific features for AWS
+
  - talisman
+   - Go applications
    - Works by hooking commit, select between pre-push and pre-commit
    - Scans history (time?)
-   - 
-
+ 
  - truffleHog
    - Standalone Python application, uses git, doesn't integrate with it.
    - Doesn't pick up obvious secrets (strings called password or secret)
