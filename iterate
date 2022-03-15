@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# Scans first 200 repos for contino:
+# Assumes you have gh cli, jq, xargs and trufflehog installed, 
+# and that you have logged in with gh cli with a user with access to contino org
+gh repo list contino --json url -L 200 | jq '.[].url' | xargs -n 1 trufflehog
