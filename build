@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+if [$# -lt 1 ]; then
+	echo "Need a github token!"
+	exit 2
+fi
+
+docker build --build-arg ghtoken=${1} -t secscantest:1.0 .
