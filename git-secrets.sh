@@ -9,4 +9,4 @@ echo "  " >> MyApp.py
 echo "  " >> aws-gitleaks.json
 
 git add *
-git commit -m "gitleaks test"
+git commit -m "git-secrets test"

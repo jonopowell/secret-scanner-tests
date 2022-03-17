@@ -11,6 +11,8 @@ Make a list of the requirements for each secret scanner
    - Bash Scripts
    - Hooks commit
    - Specific features for AWS
+   - Easily confused with git secret which is a git command to store secrets in a git repo.
+   - 
 
  - talisman
    - https://github.com/thoughtworks/talisman

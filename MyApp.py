@@ -5,7 +5,7 @@ import random
 import base64
 
 token = b'w4QFwpZsdb+8fZOofxkbMIG4Id+aFy3cWDr4KEf8w05tDpByMTU=\n'
-password = "Sup3rTop$ecr3t!".encode()
+password = "!Sup3rTop$ecr3t!".encode()
 
 def _gen_salt():
     salt = [chr(random.randint(0,255)) for i in range(4) ]
