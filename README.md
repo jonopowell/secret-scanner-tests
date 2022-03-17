@@ -2,9 +2,9 @@
 Make a list of the requirements for each secret scanner
  - gitleaks
    - https://github.com/zricethezav/gitleaks
-   - Go application, builds itself in a docker container
+   - Go application, it can build itself in a docker container
    - Needs python and python-pip because it relies on pre-commit to work
-   - In my tests it didn't work on commit and had to be invoked separately
+   - In my tests it didn't find secrets in the MyApp.py on commit and had to be invoked as a scan of the repo
  
  - git-secrets
    - https://github.com/awslabs/git-secrets
