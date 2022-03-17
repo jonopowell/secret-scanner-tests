@@ -2,5 +2,5 @@ fileignoreconfig:
 - filename: Dockerfile
   checksum: 689eb57bd4d0b6ff96361ca14f4d9decc87e7dfb346c82b5b8997336eb7282a3
 - filename: MyApp.py
-  checksum: fa3d85abaf4a8a8c3395ac0e1b3cf0b230b7e6d67b5fc86dd63ad9a7ccb3c265
+  checksum: 1eadb12eb1efca7ad814fb9fafe648c760ef7e9f40c6cce188db31065e3c9465
 version: "1.0"
