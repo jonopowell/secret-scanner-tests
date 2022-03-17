@@ -3,7 +3,7 @@ Make a list of the requirements for each secret scanner
  - gitleaks
    - Go application, builds itself in a docker container
    - Needs python and python-pip because it relies on pre-commit to work
-   
+   - In my tests it didn't work on commit and had to be invoked separately
  
  - git-secrets
    - Bash Scripts
