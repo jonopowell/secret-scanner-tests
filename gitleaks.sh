@@ -2,11 +2,13 @@
 
 pip install pre-commit
 
-cd ..
+cd ~
 git clone https://github.com/zricethezav/gitleaks.git
 
 cd gitleaks
 make build
+
+export PATH=${PATH}:~/gitleaks
 
 cd ../secret-scanner-test
 cp gitleaks/.pre-commit-config.yaml .
