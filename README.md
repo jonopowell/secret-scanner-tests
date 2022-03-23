@@ -3,8 +3,12 @@ Make a list of the requirements for each secret scanner
  - gitleaks
    - https://github.com/zricethezav/gitleaks
    - Go application, it can build itself in a docker container
-   - Needs python and python-pip because it relies on pre-commit to work
-   - In my tests it didn't find secrets in the MyApp.py on commit and had to be invoked as a scan of the repo
+   - Needs python and python-pip to hook commit, it can run as a standalone scanner
+   - It doesn't find obvious secrets (password= or secret =) 
+   - When used in precommit it only sees new or changed secrets
+   - Uses a combination of entropy and regexp to find secrets (regexp matches, and then entropy hones the match)
+   - Allow list
+
  
  - git-secrets
    - https://github.com/awslabs/git-secrets
@@ -22,8 +26,8 @@ Make a list of the requirements for each secret scanner
  
  - truffleHog
    - https://github.com/trufflesecurity/truffleHog
-   - Standalone Python application, uses git, doesn't integrate with it.
-   - Doesn't pick up obvious secrets (strings called password or secret)
+   - Standalone Python application and Python module uses git, doesn't integrate with it.
+   - Doesn't pick up obvious secrets (strings called password or secret), did spot usernames in URLS
    - Can be pointed at a remote repo rather than a local one
 
  # Mechanisms for Scanning
