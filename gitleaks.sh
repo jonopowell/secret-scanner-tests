@@ -10,16 +10,15 @@ make build
 
 export PATH=${PATH}:~/gitleaks
 
-cd ../secret-scanner-test
+cd ~/secret-scanner-test
 cp gitleaks/.pre-commit-config.yaml .
 pre-commit install 
 
-git config --global user.name "jonopowell"
-git config --global user.email "jono.powell@contino.io"
+git config --global user.email "security@contino.io"
 git checkout -b gitleaks origin/gitleaks
 
-echo "  " >> MyApp.py
 echo "  " >> aws-gitleaks.json
+echo "  " >> MyApp.py
 
 git add *
 git commit -m "gitleaks test"
