@@ -17,8 +17,11 @@ pre-commit install
 git config --global user.email "security@contino.io"
 git checkout -b gitleaks origin/gitleaks
 
-echo "  " >> aws-gitleaks.json
-echo "  " >> MyApp.py
+RANDO =  `cat /dev/urandom | tr -dc '[:alnum:]' | fold -w ${1:-16} | head -n 1 |  awk '{print toupper($0)}'`
+
+sed -i "s/\(\"Secret\": \"AKIA\)\(IMNOJVGFDXXXE4OAi\)\(\"\)/\1$RANDO\2/g" aws-gitleaks.json
+sed -i 's///g' MyApp.py
+
 
 git add *
 git commit -m "gitleaks test"

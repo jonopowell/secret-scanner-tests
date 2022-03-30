@@ -7,7 +7,7 @@ Make a list of the requirements for each secret scanner
    - It doesn't find obvious secrets (password= or secret =) 
    - When used in precommit it only sees new or changed secrets
    - Uses a combination of entropy and regexp to find secrets (regexp matches, and then entropy hones the match)
-   - Allow list
+   - Allow liste
 
  
  - git-secrets

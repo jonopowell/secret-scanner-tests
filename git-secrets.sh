@@ -11,9 +11,8 @@ git config --global user.name "jonopowell"
 git config --global user.email "jono.powell@contino.io"
 git pull
 
+sed -i 's///g' aws
 
-echo "  " >> MyApp.py
-echo "  " >> aws-gitleaks.json
 
 git add *
 git commit -m "git-secrets test"

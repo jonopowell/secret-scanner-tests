@@ -1,7 +1,8 @@
-FROM ubuntu:latest AS layer0
+FROM debian:latest AS layer0
 RUN apt update 
+RUN apt upgrade
 RUN DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt install -y tzdata 
-RUN apt install -y curl build-essential git python3 python3-pip
+RUN apt install -y curl build-essential git python3 python3-pip vim nano
 RUN curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg \
         && echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | tee /etc/apt/sources.list.d/github-cli.list > /dev/null 
 RUN apt update \ 
