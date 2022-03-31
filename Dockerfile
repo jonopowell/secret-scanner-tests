@@ -16,3 +16,4 @@ ARG ghtoken
 RUN echo $ghtoken | gh auth login --with-token \
 	&& gh auth setup-git
 RUN cd && git clone https://github.com/contino/secret-scanner-test.git
+RUN git config --global user.email "info@contino.io"
