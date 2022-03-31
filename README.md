@@ -26,6 +26,7 @@ Make a list of the requirements for each secret scanner
    - Scans history
    - Html reporting!
    - Needs local repo access
+   - Adds checksum list of files to ignore
  
  - truffleHog
    - https://github.com/trufflesecurity/truffleHog
